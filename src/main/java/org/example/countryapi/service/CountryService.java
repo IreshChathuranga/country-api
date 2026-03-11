@@ -22,7 +22,7 @@ public class CountryService {
 
             RestTemplate restTemplate = new RestTemplate();
 
-            String url = "https://restcountries.com/v3.1/all";
+            String url = "https://restcountries.com/v3.1/all?fields=name,capital,region,population,flags";
 
             // Call external API and get response as a list of maps
             List<Map<String, Object>> response =
